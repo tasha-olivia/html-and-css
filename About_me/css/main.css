@@ -1,0 +1,123 @@
+* {
+box-sizing: border-box;
+}
+body {
+    margin: 0;
+    /* padding: 0 50px 0 50px; */
+}
+#olive {
+    margin-top: 0;
+    width: 700px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #f0fde7;
+    padding: 20px;
+    margin:  auto;
+}
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: 100;
+    text-align: center; 
+    color: #9a13ec;
+}
+
+#olive .image {
+    background-image: url(/images/female.jpg);
+    width: 700px;
+    height: 70vh;
+    margin-left: -20px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+}
+@media screen and (max-width: 900px) {
+    #olive {
+        width: 500px;
+    }
+    #olive .image {
+        width: 500px;
+        height: 60vh;
+    } 
+}
+
+@media screen and (max-width: 700px) {
+    #olive {
+        width: 400px;
+    }
+    #olive .image {
+        width: 400px;
+        height: 50vh;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    #olive {
+        width: 300px;
+    }
+    #olive .image {
+        width: 300px;
+        height: 40vh;
+    } 
+    #olive p {
+        font-size: 35px;
+    }
+    #olive h1 {
+        font-size: 50px;
+    }
+
+    #icons .fa {
+        font-size: 20px;
+        width: 40px;
+      }
+}
+
+p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    font-weight: 50;
+    text-align: center;
+    color: #404040;
+}
+
+.par p {
+    color:#9a13ec; 
+}
+hr {
+    margin-top: 50px;
+    color:#9a13ec;
+    margin-bottom: 50px; 
+}
+
+/* ########## social media icons ########## */
+#icons {
+    align-items: center;
+    text-align: center;
+}
+.fa {
+    padding: 10px 10px 10px 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background: #e2fbd0;
+    border-radius:  50%;
+  }
+  
+  .fa:hover {
+    /* background: #e2fbd0; */
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    color: #3B5998;
+  }
+  
+  .fa-twitter {
+    color: #55ACEE;
+  }
+  .fa-envelope {
+    color: #55ACEE;
+  }
+  

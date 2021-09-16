@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+/* nav {
+  background: #ffffff;
+} */
+nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+nav ul {
+  text-align: center;
+  list-style: none;
+  position: relative;
+  margin-top: -20px;
+}
+nav ul li {
+  
+  display: inline-block;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #9a13ec;
+  line-height: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+/*////////// over property ///////////*/
+ nav ul li a:hover {
+  color: #9a13ec;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #9a13ec, 0 0 10px #9a13ec;
+}
+nav ul ul li a:hover {
+  box-shadow: none;
+}
+nav ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/*////////// over property end///////////*/
+
+/* ///////// Icon //////////*/
+.show,
+.icon,
+input {
+  display: none;
+}
+
+/*/////////// icon end ///////////////*/
+@media all and (max-width: 900px) {
+  nav ul {
+    margin-right: 70%;
+    
+  }
+  .show + a,
+  ul {
+    display: none;
+  }
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  .icon {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    display: block;
+    color: #9a13ec;
+    position: absolute;
+    right: 140px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+}
+
+/* ########### my image ########### */
+.ima {
+  background-image: url(/images/todd\ \(2\).JPG);
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  margin: auto;
+}
